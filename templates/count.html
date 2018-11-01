@@ -1,0 +1,14 @@
+<h1>Hay  {{ count }}  palabras en el texto</h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>Texto Completo: </h1>
+{{ fulltext }}
+
+<h1>Conteo: </h1>
+
+{% for word, ctotal in diccionario%}
+{{ word }} - {{ ctotal }}
+<br/>
+
+{% endfor %}
